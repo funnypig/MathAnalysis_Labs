@@ -164,18 +164,20 @@ def DoTest(a,b,fx, funcname = "", wolfram = ""):
                     ]
 }
 
-a = -pi/2; b = pi/2; fx = f1
-output.append(DoTest(a,b,fx,"f(x) = x + cos(x)","2"))
+if __name__ == '__main__':
 
-a = 0.9; b = 1; fx = f2
-output.append(DoTest(a,b,fx,"f(x) = 3^(-x^2)", "0.0371354"))
+    a = -pi/2; b = pi/2; fx = f1
+    output.append(DoTest(a,b,fx,"f(x) = x + cos(x)","2"))
 
-a = 0; b = 1; fx = f3
-output.append(DoTest(a,b,fx,"f(x) = sin(x^10)","0.0856934"))
+    a = 0.9; b = 1; fx = f2
+    output.append(DoTest(a,b,fx,"f(x) = 3^(-x^2)", "0.0371354"))
 
-a = 0; b = 3; fx = f4
-output.append(DoTest(a,b,fx,"f(x) = x^(-x)","1.9788156689153"))
+    a = 0; b = 1; fx = f3
+    output.append(DoTest(a,b,fx,"f(x) = sin(x^10)","0.0856934"))
 
-print(str(output).replace("'",'"'))
+    a = 0; b = 3; fx = f4
+    output.append(DoTest(a,b,fx,"f(x) = x^(-x)","1.9788156689153"))
+
+    print(str(output).replace("'",'"'))
 
 
