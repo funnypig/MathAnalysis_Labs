@@ -1,6 +1,7 @@
 from math import *
 from Integrals import IntegralSimpson
 
+import matplotlib.pyplot as plt
 import numpy as np
 
 ''' 
