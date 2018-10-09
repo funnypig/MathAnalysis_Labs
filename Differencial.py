@@ -12,7 +12,7 @@ def partial_derivative(f, x, pos):
 
 def vec_derivative_1(f,x):
     m = len(x)
-    return np.array([partial_derivative(f,x,[i]) for i in range(m)])
+    return np.array([partial_derivative(f,x,i) for i in range(m)])
 
 def vec_derivative_2(f,x):
     res = 0
