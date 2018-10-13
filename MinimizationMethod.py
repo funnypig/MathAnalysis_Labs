@@ -1,7 +1,12 @@
 import numpy as np
 from math import *
+from Differencial import vec_derivative_1, vec_derivative_2, partial_derivative
 
-from Differencial import vec_derivative_1, vec_derivative_2
+
+from mpl_toolkits.mplot3d import Axes3D
+from matplotlib import cm
+import matplotlib.pyplot as plt
+
 
 epsilon = 10**(-6)
 over = 10.1**20
@@ -93,10 +98,11 @@ def test(f, vars = 2, maximum=False):
         print('Iterations:',res[1])
     print()
 
-def testN(f, x0, maximum=False):
+def testNewton(f, x0, maximum=False):
     f_msg = 'max' if maximum else 'min'
 
     res = NewtonsMethod(f, x0, maximum=maximum)
+    print('x_0 =',x0)
     if str(res[0]) == 'Not exist':
         if maximum:
             print('Maximum doesn\'t exist')
@@ -141,25 +147,49 @@ if __name__ == '__main__':
 
     print("Newton's method:\n")
     print('Task 1:')
-    testN(f1, (10,10))
-    testN(f1, (10,10), True)
+    testNewton(f1, (10, 10))
+    testNewton(f1, (10, 10), True)
 
     print('Task 2:\n')
-    testN(f1, (10,10))
-    testN(f1, (10,10), True)
+    testNewton(f1, (10, 10))
+    testNewton(f1, (10, 10), True)
 
     xs = [(10,10), (10, -10), (-10, 10), (-10, -10), (0,0)]
 
     for i in range(len(xs)):
-        testN(f2, xs[i])
-        testN(f2, xs[i], True)
-
-    print('Task 3:\n')
-    testN(f3, (1,1))
-    testN(f3, (1,1), maximum=True)
+        testNewton(f2, xs[i])
+        testNewton(f2, xs[i], True)
 
     print()
     print('Task 4:\n')
     for x in [(1,1,1),(3,3,3),(-1,-2,-3)]:
-        testN(f4, x)
-        testN(f4, x, maximum=True)
+        testNewton(f4, x)
+        testNewton(f4, x, maximum=True)
+
+    print('Task 3:\n')
+    f = lambda x: x[0]**2+x[1]**2
+
+    def tangent_equation(f,x0):
+        fx0 = f(x0)
+        d1 = partial_derivative(f, x0, 0)
+        d2 = partial_derivative(f, x0, 1)
+        return lambda x1, x2: d1*(x1-x0[0]) + d2*(x2 - x0[1]) + fx0
+
+
+    fig = plt.figure()
+    ax = fig.add_subplot(1,2,1, projection='3d')
+
+    X = np.linspace(-2,2,100)
+    Y = np.linspace(-2,2,100)
+
+    x0 = np.array([1.0,1.0])
+    tan_eq = tangent_equation(f,x0)
+    X, Y = np.meshgrid(X, Y)
+    Z = np.array(X**2+Y**2)
+    #np.array([tan_eq(X[i],Y[i]) for i in range(1000)])
+    surf = ax.plot_surface(X,Y,Z)
+
+    plane = np.array([tan_eq(X[i],Y[i]) for i in range(100)])
+    surf1 = ax.plot_surface(X,Y,plane)
+    plt.show()
+
