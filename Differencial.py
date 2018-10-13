@@ -2,6 +2,12 @@ from math import *
 from itertools import permutations
 import numpy as np
 
+
+
+from mpl_toolkits.mplot3d import Axes3D
+from matplotlib import cm
+import matplotlib.pyplot as plt
+
 dx = 10**(-6)
 eps = 10**(-6)
 
@@ -75,3 +81,31 @@ if __name__ == '__main__':
     x = np.array([0.1,0.05])
     x0 = np.array([0,0])
     print('Task 4:\nf(x)=',f(x),'\nResult:',r,'\nDifference:',f(x)-r,'\n')
+
+
+    print('Task 3:\n')
+    f = lambda x: x[0]**2+x[1]**2
+
+    def tangent_equation(f,x0):
+        fx0 = f(x0)
+        d1 = partial_derivative(f, x0, 0)
+        d2 = partial_derivative(f, x0, 1)
+        return lambda x1, x2: d1*(x1-x0[0]) + d2*(x2 - x0[1]) + fx0
+
+
+    fig = plt.figure()
+    ax = fig.add_subplot(1,2,1, projection='3d')
+
+    X = np.linspace(-2,2,100)
+    Y = np.linspace(-2,2,100)
+
+    x0 = np.array([1.0,1.0])
+    tan_eq = tangent_equation(f,x0)
+    X, Y = np.meshgrid(X, Y)
+    Z = np.array(X**2+Y**2)
+    #np.array([tan_eq(X[i],Y[i]) for i in range(1000)])
+    surf = ax.plot_surface(X,Y,Z)
+
+    plane = np.array([tan_eq(X[i],Y[i]) for i in range(100)])
+    surf1 = ax.plot_surface(X,Y,plane)
+    plt.show()
