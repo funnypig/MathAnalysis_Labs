@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="08702873-3f93-4199-96d0-651ea5bff4bc" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/Fourier_Transform.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Mass.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Measures.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
@@ -60,16 +61,51 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Fourier_Transform.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Fourier_Transform.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Fourier_Transform.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="62" column="27" lean-forward="true" selection-start-line="62" selection-start-column="27" selection-end-line="62" selection-end-column="27" />
+            <state relative-caret-position="195">
+              <caret line="151" selection-start-line="151" selection-end-line="151" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Measures.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Measures.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="262">
+              <caret line="52" column="29" lean-forward="true" selection-start-line="52" selection-start-column="29" selection-end-line="52" selection-end-column="29" />
+              <folding>
+                <element signature="e#0#13#0" expanded="true" />
+                <element signature="e#15#23#1" />
+                <element signature="e#126#388#1" />
+                <element signature="e#644#1018#0" />
+                <element signature="e#739#1727#0" />
+                <element signature="e#2221#3072#0" />
+                <element signature="e#4243#4720#0" />
+                <element signature="e#4416#4477#0" />
+                <element signature="e#5133#5438#0" />
+                <element signature="e#5549#5781#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="random.py" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36-32/Lib/random.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="152">
+              <caret line="256" selection-start-line="256" selection-end-line="256" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Mass.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Mass.py">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -96,6 +132,8 @@
         <option value="$USER_HOME$/Downloads/Telegram Desktop/laba6.py" />
         <option value="$PROJECT_DIR$/Intergrals_6.py" />
         <option value="$PROJECT_DIR$/Fourier_Transform.py" />
+        <option value="$PROJECT_DIR$/Mass.py" />
+        <option value="$PROJECT_DIR$/Measures.py" />
       </list>
     </option>
   </component>
@@ -110,7 +148,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Course" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -122,6 +159,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Course" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -146,7 +184,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Fourier_Transform">
+  <component name="RunManager" selected="Python.Measures">
     <configuration name="Differencial" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="MathAnalysis_Labs" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -201,7 +239,7 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="MinimizationMethod" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="Measures" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="MathAnalysis_Labs" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -213,7 +251,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/MinimizationMethod.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Measures.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -239,18 +277,18 @@
     </configuration>
     <list>
       <item itemvalue="Python.Differencial" />
-      <item itemvalue="Python.MinimizationMethod" />
       <item itemvalue="Python.Intergrals_6" />
       <item itemvalue="Python.laba6" />
       <item itemvalue="Python.Fourier_Transform" />
+      <item itemvalue="Python.Measures" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Measures" />
         <item itemvalue="Python.Fourier_Transform" />
         <item itemvalue="Python.Intergrals_6" />
         <item itemvalue="Python.laba6" />
         <item itemvalue="Python.Differencial" />
-        <item itemvalue="Python.MinimizationMethod" />
       </list>
     </recent_temporary>
   </component>
@@ -262,10 +300,9 @@
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24107143" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32890856" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32890856" />
       <window_info anchor="bottom" id="Python Console" order="8" weight="0.32890856" />
-      <window_info active="true" anchor="bottom" id="Run" order="6" visible="true" weight="0.29056048" />
+      <window_info active="true" anchor="bottom" id="Run" order="6" visible="true" weight="0.36725664" />
       <window_info anchor="bottom" id="Debug" order="2" weight="0.34365782" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info id="Structure" order="1" weight="0.25" />
@@ -275,6 +312,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32890856" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -282,34 +320,10 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="9" />
+      <option name="time" value="78" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Differencial.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="18" selection-start-column="18" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DiffEquation.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="23" selection-start-line="23" selection-end-line="24" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MinimizationMethod.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="6" column="17" lean-forward="true" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Integrals.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3043">
@@ -680,10 +694,39 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Fourier_Transform.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="62" column="27" lean-forward="true" selection-start-line="62" selection-start-column="27" selection-end-line="62" selection-end-column="27" />
+        <state relative-caret-position="195">
+          <caret line="151" selection-start-line="151" selection-end-line="151" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Mass.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36-32/Lib/random.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="256" selection-start-line="256" selection-end-line="256" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Measures.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="52" column="29" lean-forward="true" selection-start-line="52" selection-start-column="29" selection-end-line="52" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+            <element signature="e#15#23#1" />
+            <element signature="e#126#388#1" />
+            <element signature="e#644#1018#0" />
+            <element signature="e#739#1727#0" />
+            <element signature="e#2221#3072#0" />
+            <element signature="e#4243#4720#0" />
+            <element signature="e#4416#4477#0" />
+            <element signature="e#5133#5438#0" />
+            <element signature="e#5549#5781#0" />
           </folding>
         </state>
       </provider>
