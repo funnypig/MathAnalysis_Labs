@@ -98,7 +98,7 @@ def MeasureCalculation(n: int, _set, dims: int, start_point, fin_point):
     for i in v:
         MQ0 *= i
 
-    # TODO: do not calculate whole set A. just pick up point from  it randomly y coordinates
+    # TODO: do not calculate whole set A. just pick up point from  it randomly by coordinates
 
     return (in_set/pts)*MQ0
 

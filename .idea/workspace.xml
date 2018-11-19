@@ -76,8 +76,8 @@
       <file leaf-file-name="Measures.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Measures.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="262">
-              <caret line="52" column="29" lean-forward="true" selection-start-line="52" selection-start-column="29" selection-end-line="52" selection-end-column="29" />
+            <state relative-caret-position="153">
+              <caret line="100" column="80" selection-start-line="100" selection-start-column="80" selection-end-line="100" selection-end-column="80" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
                 <element signature="e#15#23#1" />
@@ -714,8 +714,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Measures.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="52" column="29" lean-forward="true" selection-start-line="52" selection-start-column="29" selection-end-line="52" selection-end-column="29" />
+        <state relative-caret-position="153">
+          <caret line="100" column="80" selection-start-line="100" selection-start-column="80" selection-end-line="100" selection-end-column="80" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
             <element signature="e#15#23#1" />
