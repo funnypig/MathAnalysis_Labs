@@ -10,10 +10,8 @@ Mass: 101.19958302420733
 
 Task 3:
 Length: 9.417111117717473
-Mass: 0.017251954173590846
-B =  4
-
-Process finished with exit code 0
+Mass: 0.017253900663406613
+B =  5
 
 '''
 
@@ -84,7 +82,7 @@ if __name__ == '__main__':
 
     print('Task 3:')
     # lazy implementation
-    eps = 10**(-5)
+    eps = 10**(-6)
 
     u1 = lambda t: t
     u2 = lambda t: e**(t)
